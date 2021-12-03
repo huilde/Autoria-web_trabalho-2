@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1.4fr 0.6fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Header Header Header Header Header"
+          "main main aside aside aside"
+          "main main aside aside aside"
+          "main main aside aside aside"
+          "footer footer footer footer footer";
+      }
+      
+header { grid-area: Header;
+    background-color: #F3F3F3;
+    width: 100%;
+    height: 20vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+      
+main { grid-area: main; 
+    padding: 6vh;
+    height: 100%;
+    background-color:white;}
+      
+aside {
+    grid-area: aside; 
+    background-image: url(./imagens/alunos.png);
+    background-size: cover;
+
+ 
+    
+}
+footer {
+    display:flex;
+    grid-area: footer;
+    background-color: #A2B3C3; }
+      
+.circulo{
+    border-radius: 50%;
+    background-color: #CB1717;
+    display: flex;
+    margin-left: 6vh;
+    height: 5rem;
+    width: 4rem;
+   
+}
+    menu{
+      
+        width: 60vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+h1{
+font-family: sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 45px;
+line-height: 53px;
+display: inline-block;
+color: #CB1717;
+    }
+p{
+color: black;
+font-family: sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 1.5rem;
+line-height: 21px;
+
+}
+.click{
+    cursor: pointer;
+}
+.click:hover{
+    color:#CB1717 ;
+}
+
+main{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+
+}
